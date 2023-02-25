@@ -4,6 +4,7 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
+
 const button = document.querySelector('.change-color');
 const span = document.querySelector('.color');
 const body = document.body;
@@ -16,4 +17,9 @@ function onBtnClick() {
   body.style.background = color;
 };
 
-setInterval(onBtnClick, 100);
+
+
+const text = document.createElement('h2');
+const widget = document.querySelector('.widget');
+text.textContent = "Перепрошую за дискотеку \ud83d\ude22";
+widget.append(text);
